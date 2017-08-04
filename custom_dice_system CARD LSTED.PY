@@ -234,7 +234,7 @@ Undertaker = card("Undertaker", dice.Sword_4)
 #Kingmaker1
 Kingmaker = card("Kingmaker", dice.Sword_6, dice.Political, dice.Castle, dice.Castle, dice.Castle)
 
-for target in [Priest, Priest2, Priest3, Priest4, Warrior, Warrior2, Warrior3, Wizard, Wizard2, Wizard3, Blacksmith, Blacksmith2, Blacksmith3, Builder, Builder2, Mancer, Mancer2, Docks, Docks2, undertaker, Kingmaker]:
+for target in [Priest, Priest2, Priest3, Priest4, Warrior, Warrior2, Warrior3, Wizard, Wizard2, Wizard3, Blacksmith, Blacksmith2, Blacksmith3, Builder, Builder2, Mancer, Mancer2, Docks, Docks2, Undertaker, Kingmaker]:
 
     # test_buy(target)
     test_buy(target, number_of_tests=10_000)
