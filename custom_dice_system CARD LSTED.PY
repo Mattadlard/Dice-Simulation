@@ -209,32 +209,48 @@ Priest2 = card("P2", dice.Sword_13)
 Priest3 = card("P3", dice.Sword_8, dice.Sword_2, dice.Political, dice.Wizard)
 Priest4 = card("P4", dice.Sword_6, dice.Political, dice.Political, dice.Castle)
 # Warrior3
-Warrior = card("Warrior1", dice.Sword_12)
-Warrior2 = card("Warrior2", dice.Political, dice.Political, dice.Political, dice.Castle, dice.Wizard)
-Warrior3 = card("Warrior3", dice.Castle, dice.Castle, dice.Political, dice.Political)
+Warrior = card("B1", dice.Sword_12)
+Warrior2 = card("B2", dice.Political, dice.Political, dice.Political, dice.Castle, dice.Wizard)
+Warrior3 = card("B3", dice.Castle, dice.Castle, dice.Political, dice.Political)
 #Wizard3
-Wizard = card("Wizard", dice.Sword_4, dice.Sword_4, dice.Political)
-Wizard2 = card("Wizard2", dice.Sword_10)
-Wizard3 = card("Wizard3", dice.Sword_4, dice.Castle, dice.Castle, dice.Political, dice.Political, dice.Wizard)
-#Blacksmith3
-Blacksmith = card("Blacksmith1", dice.Castle, dice.Castle, dice.Castle)
-Blacksmith2 = card("Blacksmith2", dice.Political, dice.Political, dice.Political)
-Blacksmith3 = card("Blacksmith3", dice.Sword_3, dice.Castle, dice.Castle, dice.Castle)
+Wizard = card("G1", dice.Sword_4, dice.Sword_4, dice.Political)
+Wizard2 = card("G2", dice.Sword_10)
+Wizard3 = card("G3", dice.Sword_4, dice.Castle, dice.Castle, dice.Political, dice.Political, dice.Wizard)
+#Kingmakersmith3
+Kingmakersmith = card("Y1", dice.Castle, dice.Castle, dice.Castle)
+Kingmakersmith2 = card("Y2", dice.Political, dice.Political, dice.Political)
+Kingmakersmith3 = card("Y3", dice.Sword_3, dice.Castle, dice.Castle, dice.Castle)
 #Builder2
-Builder = card("Builder", dice.Political, dice.Political, dice.Political, dice.Wizard)
-Builder2 = card("Builder2", dice.Sword_10)
+Builder = card("O1", dice.Political, dice.Political, dice.Political, dice.Wizard)
+Builder2 = card("O2", dice.Sword_10)
 #Mancer2
-Mancer = card("Mancer", dice.Sword_2, dice.Political, dice.Political, dice.Castle)
-Mancer2 = card("Mancer2", dice.Sword_4, dice.Sword_3, dice.Political, dice.Political)
+Mancer = card("R1", dice.Sword_2, dice.Political, dice.Political, dice.Castle)
+Mancer2 = card("R2", dice.Sword_4, dice.Sword_3, dice.Political, dice.Political)
 #Docks2
-Docks = card("Docks", dice.Sword_3)
-Docks2 = card("Docks2",  dice.Political, dice.Castle, dice.Castle, dice.Castle)
+Docks = card("W1", dice.Sword_3)
+Docks2 = card("W2",  dice.Political, dice.Castle, dice.Castle, dice.Castle)
 #undertaker1
-Undertaker = card("Undertaker", dice.Sword_4)
+Undertaker = card("GR2", dice.Sword_4)
 #Kingmaker1
-Kingmaker = card("Kingmaker", dice.Sword_6, dice.Political, dice.Castle, dice.Castle, dice.Castle)
+Kingmaker = card("BK2", dice.Sword_6, dice.Political, dice.Castle, dice.Castle, dice.Castle)
+#Player 1 Upgrade
+P1_UpGrade = card("P1_UpGrade", dice.Sword_4, dice.Castle, dice.Castle, dice.Political, dice.Political, dice.Wizard)
+#Player 2 Upgrade
+P2_UpGrade = card("P2_UpGrade", dice.Sword_4, dice.Castle, dice.Castle, dice.Political, dice.Political, dice.Wizard)
+#Player 3 Upgrade
+P3_UpGrade = card("P3_UpGrade", dice.Sword_4, dice.Castle, dice.Castle, dice.Political, dice.Political, dice.Wizard)
+#Player 4 Upgrade
+P4_UpGrade = card("P4_UpGrade", dice.Sword_4, dice.Castle, dice.Castle, dice.Political, dice.Political, dice.Wizard)
+#Player 5 Upgrade
+P5_UpGrade = card("P5_UpGrade", dice.Sword_4, dice.Castle, dice.Castle, dice.Political, dice.Political, dice.Wizard)
+#Player 6 Upgrade
+P6_UpGrade = card("P6_UpGrade", dice.Sword_4, dice.Castle, dice.Castle, dice.Political, dice.Political, dice.Wizard)
+#Generic Upgrade
+G1_UpGrade = card("G1_UpGrade", dice.Sword_3, dice.Castle, dice.Castle, dice.Wizard, dice.Political, dice.Sword_2)
+#Generic 2 Upgrade
+G2_UpGrade = card("G2_UpGrade", dice.Sword_3, dice.Castle, dice.Castle, dice.Wizard, dice.Political, dice.Sword_3)
 
-for target in [Priest, Priest2, Priest3, Priest4, Warrior, Warrior2, Warrior3, Wizard, Wizard2, Wizard3, Blacksmith, Blacksmith2, Blacksmith3, Builder, Builder2, Mancer, Mancer2, Docks, Docks2, Undertaker, Kingmaker]:
+for target in [Priest, Priest2, Priest3, Priest4, Warrior, Warrior2, Warrior3, Wizard, Wizard2, Wizard3, Kingmakersmith, Kingmakersmith2, Kingmakersmith3, Builder, Builder2, Mancer, Mancer2, Docks, Docks2, Undertaker, Kingmaker, P1_UpGrade, P2_UpGrade, P3_UpGrade, P4_UpGrade, P5_UpGrade, P6_UpGrade, G1_UpGrade, G2_UpGrade]:
 
     # test_buy(target)
     test_buy(target, number_of_tests=10_000)
